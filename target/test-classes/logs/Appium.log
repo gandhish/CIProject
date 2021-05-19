@@ -1,0 +1,57 @@
+2021-04-25 17:23:02:099 [Appium] Welcome to Appium v1.20.2
+2021-04-25 17:23:02:100 [Appium] Non-default server args:
+2021-04-25 17:23:02:100 [Appium]   logFile: /Users/gandhish/eclipse-workspace/Appium/src/test/resources/logs/Appium.log
+2021-04-25 17:23:02:101 [Appium]   localTimezone: true
+2021-04-25 17:23:02:118 [Appium] Appium REST http interface listener started on 0.0.0.0:4723
+2021-04-25 17:23:02:378 [HTTP] --> GET /wd/hub/status
+2021-04-25 17:23:02:378 [HTTP] {}
+2021-04-25 17:23:02:380 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-04-25 17:23:02:381 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.20.2"}}
+2021-04-25 17:23:02:386 [HTTP] <-- GET /wd/hub/status 200 6 ms - 68
+2021-04-25 17:23:02:386 [HTTP] 
+2021-04-25 17:23:02:640 [HTTP] --> GET /wd/hub/status
+2021-04-25 17:23:02:640 [HTTP] {}
+2021-04-25 17:23:02:641 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-04-25 17:23:02:641 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.20.2"}}
+2021-04-25 17:23:02:642 [HTTP] <-- GET /wd/hub/status 200 1 ms - 68
+2021-04-25 17:23:02:642 [HTTP] 
+2021-04-25 17:23:02:871 [HTTP] Request idempotency key: fc55bd3c-8e55-4585-b742-510ccf30d21f
+2021-04-25 17:23:02:889 [HTTP] --> POST /wd/hub/session
+2021-04-25 17:23:02:890 [HTTP] {"desiredCapabilities":{"app":"Users/gandhish/desktop/UIKitCatalog.app","commandTimeouts":"12000","platformVersion":"14.4","automationName":"XCuiTest","platformName":"iOS","deviceName":"iPhone 12 Pro Max","launchTimeout":50000},"capabilities":{"firstMatch":[{"appium:app":"Users/gandhish/desktop/UIKitCatalog.app","appium:automationName":"XCuiTest","appium:commandTimeouts":"12000","appium:deviceName":"iPhone 12 Pro Max","appium:launchTimeout":50000,"platformName":"ios","appium:platformVersion":"14.4"}]}}
+2021-04-25 17:23:02:892 [W3C] Calling AppiumDriver.createSession() with args: [{"app":"Users/gandhish/desktop/UIKitCatalog.app","commandTimeouts":"12000","platformVersion":"14.4","automationName":"XCuiTest","platformName":"iOS","deviceName":"iPhone 12 Pro Max","launchTimeout":50000},null,{"firstMatch":[{"appium:app":"Users/gandhish/desktop/UIKitCatalog.app","appium:automationName":"XCuiTest","appium:commandTimeouts":"12000","appium:deviceName":"iPhone 12 Pro Max","appium:launchTimeout":50000,"platformName":"ios","appium:platformVersion":"14.4"}]}]
+2021-04-25 17:23:02:893 [BaseDriver] Event 'newSessionRequested' logged at 1619351582892 (17:23:02 GMT+0530 (India Standard Time))
+2021-04-25 17:23:03:729 [Appium] Appium v1.20.2 creating new XCUITestDriver (v3.33.1) session
+2021-04-25 17:23:03:730 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2021-04-25 17:23:03:731 [BaseDriver] Creating session with W3C capabilities: {
+2021-04-25 17:23:03:731 [BaseDriver]   "alwaysMatch": {
+2021-04-25 17:23:03:731 [BaseDriver]     "platformName": "ios",
+2021-04-25 17:23:03:731 [BaseDriver]     "appium:app": "Users/gandhish/desktop/UIKitCatalog.app",
+2021-04-25 17:23:03:731 [BaseDriver]     "appium:automationName": "XCuiTest",
+2021-04-25 17:23:03:731 [BaseDriver]     "appium:commandTimeouts": "12000",
+2021-04-25 17:23:03:731 [BaseDriver]     "appium:deviceName": "iPhone 12 Pro Max",
+2021-04-25 17:23:03:731 [BaseDriver]     "appium:launchTimeout": 50000,
+2021-04-25 17:23:03:731 [BaseDriver]     "appium:platformVersion": "14.4"
+2021-04-25 17:23:03:731 [BaseDriver]   },
+2021-04-25 17:23:03:731 [BaseDriver]   "firstMatch": [
+2021-04-25 17:23:03:731 [BaseDriver]     {}
+2021-04-25 17:23:03:732 [BaseDriver]   ]
+2021-04-25 17:23:03:732 [BaseDriver] }
+2021-04-25 17:23:03:738 [BaseDriver] Session created with session id: ea3b8613-520e-469b-8eb3-96de97ee7be3
+2021-04-25 17:23:03:762 [XCUITest] Current user: 'gandhish'
+2021-04-25 17:23:08:994 [XCUITest] iOS SDK Version set to '14.4'
+2021-04-25 17:23:09:848 [iOSSim] Constructing iOS simulator for Xcode version 12.4 with udid 'B19E9ABE-C613-4412-8085-93704C0631DA'
+2021-04-25 17:23:09:849 [XCUITest] Determining device to run tests on: udid: 'B19E9ABE-C613-4412-8085-93704C0631DA', real device: false
+2021-04-25 17:23:09:850 [BaseDriver] Event 'xcodeDetailsRetrieved' logged at 1619351589850 (17:23:09 GMT+0530 (India Standard Time))
+2021-04-25 17:23:09:879 [XCUITest] Error: The application at 'Users/gandhish/desktop/UIKitCatalog.app' does not exist or is not accessible
+2021-04-25 17:23:09:879 [XCUITest]     at /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/helpers.js:235:13
+2021-04-25 17:23:09:879 [XCUITest] {}
+2021-04-25 17:23:09:880 [DevCon Factory] Releasing connections for B19E9ABE-C613-4412-8085-93704C0631DA device on any port number
+2021-04-25 17:23:09:880 [DevCon Factory] No cached connections have been found
+2021-04-25 17:23:09:881 [BaseDriver] Event 'newSessionStarted' logged at 1619351589881 (17:23:09 GMT+0530 (India Standard Time))
+2021-04-25 17:23:09:933 [W3C] Encountered internal error running command: Error: Bad app: Users/gandhish/desktop/UIKitCatalog.app. App paths need to be absolute or an URL to a compressed app file: The application at 'Users/gandhish/desktop/UIKitCatalog.app' does not exist or is not accessible
+2021-04-25 17:23:09:933 [W3C]     at XCUITestDriver.configureApp (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-xcuitest-driver/lib/driver.js:767:13)
+2021-04-25 17:23:09:933 [W3C]     at XCUITestDriver.start (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-xcuitest-driver/lib/driver.js:330:7)
+2021-04-25 17:23:09:933 [W3C]     at XCUITestDriver.createSession (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-xcuitest-driver/lib/driver.js:215:7)
+2021-04-25 17:23:09:933 [W3C]     at AppiumDriver.createSession (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/lib/appium.js:371:35)
+2021-04-25 17:23:09:948 [HTTP] <-- POST /wd/hub/session 500 7058 ms - 987
+2021-04-25 17:23:09:948 [HTTP] 
