@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: AndroidTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 12.669 s <<< FAILURE! - in AndroidTests
+testSearchYoutube(AndroidTests)  Time elapsed: 12.643 s  <<< ERROR!
+org.openqa.selenium.StaleElementReferenceException: 
+androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'C02DFP2QMD6M', ip: 'fe80:0:0:0:10cd:359d:795e:79e7%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '16'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.you..., appPackage: com.google.android.youtube, automationName: UIAutomator2, databaseEnabled: false, desired: {appActivity: com.google.android.apps.you..., appPackage: com.google.android.youtube, automationName: UIAutomator2, deviceName: android, platformName: android}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86_64, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2220, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 66, takesScreenshot: true, viewportRect: {height: 2022, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 2ab8a429-62ad-4dd6-a30f-c74d804aa1a6
+	at AndroidTests.testSearchYoutube(AndroidTests.java:22)
+
