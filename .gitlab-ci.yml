@@ -3,8 +3,6 @@ stages:
 
 postman_tests:
   stage: test
-  FROM node:alpine
-
-RUN npm install -g newman newman-reporter-html
-
-WORKDIR /etc/newman
+  image: quickrestaurant_postman_tests
+  command:
+    run WRIOnboardingAdminTests.postman_collection.json --reporters=cli,htmlextra --reporter-htmlextra-export "reports/"
