@@ -13,10 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
+      - name: Make Directory for results
+        run: mkdir -p testResults
       - name: Postman Scripts Run
         run: docker-compose up     
       - name: Output the run Details
         uses: actions/upload-artifact@main           
         with: 
           name: RunReports
-          path: Reports
+          path: testResults
