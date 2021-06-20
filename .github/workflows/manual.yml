@@ -16,9 +16,12 @@ jobs:
       - name: Make Directory for results
         run: mkdir -p testResults
       - name: Postman Scripts Run
+        id: run-newman
         run: docker-compose up     
       - name: Output the run Details
         uses: actions/upload-artifact@v2           
         with: 
           name: RunReports
           path: testResults
+      - name: Output summary to console
+        run: echo ${{ steps.run-newman.outputs.summary }}
