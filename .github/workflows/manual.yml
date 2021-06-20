@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  Run Postman Scripts:
+  Run_Postman_Scripts:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
