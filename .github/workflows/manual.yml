@@ -14,8 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@main
       - name: Postman Scripts Run
-        run: docker-compose up
-      
+        run: docker-compose up      
       - name: Output the run Details
         uses: actions/upload-artifact@main           
         with: 
