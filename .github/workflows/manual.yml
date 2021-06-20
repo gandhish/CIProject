@@ -12,7 +12,7 @@ jobs:
   Run_Postman_Scripts:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v1
       - name: Make Directory for results
         run: mkdir -p testResults
       - name: Postman Scripts Run
