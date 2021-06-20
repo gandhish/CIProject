@@ -13,7 +13,7 @@ services:
             dockerfile: Dockerfile
         image: quickrestaurant_postman_tests
         command:
-                run DummyPostmanCollection.json --reporters=cli,htmlextra --reporter-htmlextra-export "reports/PostmanReport.html" 
+                run DummyPostmanCollection.json --reporters=cli,htmlextra --reporter-htmlextra-export "PostmanReport.html" 
         volumes:
             - ./QuickRestaurant.QA.Tests/postman:/etc/newman
         networks: 
