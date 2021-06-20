@@ -12,6 +12,6 @@ jobs:
   Run_Postman_Scripts:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@main
       - name: Postman Scripts Run
         run: docker-compose up
