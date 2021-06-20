@@ -9,9 +9,9 @@ on:
       - main
 
 jobs:
-  test2:
+  Run Postman Scripts:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: test
+      - name: Postman Scripts Run
         run: docker-compose up
