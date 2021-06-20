@@ -6,76 +6,6 @@ networks:
       driver: bridge
 
 services:
-    coreapi:
-        image: quickrestaurant_api
-        build:
-            context: ./QuickRestaurant.Api
-            dockerfile: Dockerfile
-        environment: 
-            DB_CONN_STR: "host=coreapidb;port=5432;database=qsr-onboarding-core;user id=postgres;password=postgres"
-        ports:
-            - "5001:80"
-        networks: 
-            - quick_app   
-        depends_on:
-            - "coreapidb"  
-    
-    coreapidb:
-        image: postgres
-        environment:
-            POSTGRES_DB: 'qsr-onboarding-core'
-            POSTGRES_HOST_AUTH_METHOD: 'trust'
-        volumes:
-            - local_coredb_volume:/var/lib/postgresql/coredb
-            - ./QuickRestaurant.Core.Db:/docker-entrypoint-initdb.d/
-        ports:
-            - 5436:5432
-        networks: 
-            - quick_app
-        depends_on:
-            - "admindb" 
-            - "adminui" 
-            
-    adminui:
-        image: quickrestaurant_admin_ui
-        build:
-            context: ./QuickRestaurant.Admin.Ui
-            dockerfile: Dockerfile
-        environment: 
-            DB_CONN_STR: "host=admindb;port=5432;database=qsr-onboarding-admin;user id=postgres;password=postgres"
-        ports:
-            - "5002:80"
-        networks: 
-            - quick_app
-        depends_on:
-            - "admindb"            
-    
-    admindb:
-        image: postgres
-        environment:
-            POSTGRES_DB: 'qsr-onboarding-admin'
-            POSTGRES_HOST_AUTH_METHOD: 'trust'
-        volumes:
-            - local_admindb_volume:/var/lib/postgresql/admindb
-            - ./QuickRestaurant.Admin.Db:/docker-entrypoint-initdb.d/
-        ports:
-            - 5432:5432
-        networks: 
-            - quick_app
-
-    postgREST:
-        image: postgrest/postgrest
-        ports:
-            - "3000:3000"
-        links:
-            - admindb:admindb
-        environment:
-            PGRST_DB_URI: postgres://postgres:postgres@admindb:5432/qsr-onboarding-admin
-            PGRST_DB_SCHEMA: public
-            PGRST_DB_ANON_ROLE: postgres
-        networks:
-            - quick_app
-
     postman:
         container_name: postmanTests
         build:
@@ -83,13 +13,9 @@ services:
             dockerfile: Dockerfile
         image: quickrestaurant_postman_tests
         command:
-                run WRIOnboardingAdminTests.postman_collection.json --reporters=cli,htmlextra --reporter-htmlextra-export "reports/" 
+                run DummyPostmanCollection.json --reporters=cli,htmlextra --reporter-htmlextra-export "reports/" 
         volumes:
             - ./QuickRestaurant.QA.Tests/postman:/etc/newman
-        depends_on:
-            - "coreapi"
-            - "admindb"
-            - "postgREST"
         networks: 
             - quick_app
 
