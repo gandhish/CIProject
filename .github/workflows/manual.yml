@@ -2,10 +2,15 @@
 
 name: PostmanTestsWorkflow
 
-# Controls when the action will run. Workflow runs when manually triggered using the UI
-# or API.
-on: [push, pull_request]
+on: 
+  pull_request:
+  push:
+    branches:
+      - master
 
 jobs:
-  - name: test
-    run: docker-compose up
+  test2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: docker-compose up
