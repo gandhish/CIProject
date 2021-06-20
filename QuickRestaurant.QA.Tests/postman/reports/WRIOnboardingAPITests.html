@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Postman - Reports</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+        //custom script
+        $(function(){
+            $('.panel').filter(function(){ return $('.tego-bg-red', this).length})
+                    .find('.panel-heading')
+                    .removeClass('tego-bg-green')
+                    .addClass('tego-bg-red')
+        })
+  </script>
+    <style>
+        .tego-bg-red .panel-title, .tego-bg-green .panel-title {
+            color: #fff;
+        }
+        .tego-bg-red {
+            background-color: #e74c3c !important;
+        }
+        .tego-bg-green {
+            background-color: #27ae60 !important;
+        }
+        .tego-color-red {
+            color: #c0392b;
+            font-weight: bold;
+        }
+        .tego-color-green {
+            color: #27ae60;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+    <div class="row">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Test Run Information</div>
+        <div class="panel-body">
+            <div class="col-md-3">Collection</div><div class="col-md-9">WRIOnboardingAdminTests</div>
+            <div class="col-md-3">Environment</div><div class="col-md-9"></div>
+            <div class="col-md-3">Time of Run</div><div class="col-md-9">Fri Jun 11 2021 13:46:56 GMT+0000 (Coordinated Universal Time)</div>
+        </div>
+      </div>
+ 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Test Run Summary</div>
+        <div class="panel-body">
+                <div class="col-md-4"></div><div class="col-md-4"><strong>Total</strong></div><div class="col-md-4"><strong>Failed</strong></div>
+                <div class="col-md-4">Iterations</div><div class="col-md-4">1</div><div class="col-md-4">0</div>
+                <div class="col-md-4">Requests</div><div class="col-md-4">14</div><div class="col-md-4">0</div>
+                <div class="col-md-4">Prerequest Scripts</div><div class="col-md-4">18</div><div class="col-md-4">0</div>
+                <div class="col-md-4">Test Scripts</div><div class="col-md-4">26</div><div class="col-md-4">0</div>
+                <div class="col-md-4">Assertions</div><div class="col-md-4">13</div><div class="col-md-4 tego-color-red">1</div>
+
+                <div class="col-md-12">&nbsp;</div>
+                <div class="col-md-6">Total run duration</div><div class="col-md-2">41.2s</div>
+                <div class="col-md-6">Total data received</div><div class="col-md-2">39.94KB (approx)</div>
+                <div class="col-md-6">Average response time</div><div class="col-md-2">2.9s</div>
+
+                <div class="col-md-12">&nbsp;</div>
+                <div class="col-md-3"><strong>Total Failures</strong></div><div class="col-md-2  tego-color-red"><strong>1</strong></div>
+                
+        </div>
+    </div>
+    </div>
+
+    <br/><strong><h2>Requests</h2></strong>
+
+        <div class="panel-group" id="collapse-folder-ed9babbe-8975-46d8-be6c-92ae81297f04" role="tablist" aria-multiselectable="true">
+            <div role="tab" id="folderHead-ed9babbe-8975-46d8-be6c-92ae81297f04">
+                <h4 style="font-size: 18px;" class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#folderData-ed9babbe-8975-46d8-be6c-92ae81297f04" aria-controls="collapseOne"><strong>HealthCheck</strong></a></h4>
+            </div>
+            <br/>
+            <div id="folderData-ed9babbe-8975-46d8-be6c-92ae81297f04" class="panel-collapse collapsed" role="tabpanel" aria-labelledby="folderHead-ed9babbe-8975-46d8-be6c-92ae81297f04">
+                    <div class="panel-group" id="collapse-request-3341782a-db0f-48ae-9ef8-8cc5cd0c267d" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-3341782a-db0f-48ae-9ef8-8cc5cd0c267d">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-3341782a-db0f-48ae-9ef8-8cc5cd0c267d" aria-controls="collapseOne">Status Code is 200</a></h4>
+                            </div>
+            
+                            <div id="requestData-3341782a-db0f-48ae-9ef8-8cc5cd0c267d" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-3341782a-db0f-48ae-9ef8-8cc5cd0c267d">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="coreapi:80/HealthCheck" target="_blank">coreapi:80/HealthCheck</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">432ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">40B</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">{&quot;appName&quot;:&quot;Admin&quot;,&quot;appVersion&quot;:&quot;1.0.0&quot;}</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Verify Status code is 200</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-0e5a7a26-ae20-487c-be2b-de0ccf235a24" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-0e5a7a26-ae20-487c-be2b-de0ccf235a24">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-0e5a7a26-ae20-487c-be2b-de0ccf235a24" aria-controls="collapseOne">Verify property appName and its value</a></h4>
+                            </div>
+            
+                            <div id="requestData-0e5a7a26-ae20-487c-be2b-de0ccf235a24" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-0e5a7a26-ae20-487c-be2b-de0ccf235a24">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="coreapi:80/HealthCheck" target="_blank">coreapi:80/HealthCheck</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">12ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">40B</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">{&quot;appName&quot;:&quot;Admin&quot;,&quot;appVersion&quot;:&quot;1.0.0&quot;}</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Verify Property: appName available and matches &#x27;Admin&#x27;</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-6ebd5170-0de8-42f4-9113-10176e361362" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-6ebd5170-0de8-42f4-9113-10176e361362">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-6ebd5170-0de8-42f4-9113-10176e361362" aria-controls="collapseOne">Verify property appVersion and its value</a></h4>
+                            </div>
+            
+                            <div id="requestData-6ebd5170-0de8-42f4-9113-10176e361362" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-6ebd5170-0de8-42f4-9113-10176e361362">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="coreapi:80/HealthCheck" target="_blank">coreapi:80/HealthCheck</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">11ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">40B</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">{&quot;appName&quot;:&quot;Admin&quot;,&quot;appVersion&quot;:&quot;1.0.0&quot;}</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Verify Property: appVersion available and matches &#x27;1.0.0&#x27; matches</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-20ce3495-c98f-4fd5-8748-9aabd48d60f6" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-20ce3495-c98f-4fd5-8748-9aabd48d60f6">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-20ce3495-c98f-4fd5-8748-9aabd48d60f6" aria-controls="collapseOne">Verify Header</a></h4>
+                            </div>
+            
+                            <div id="requestData-20ce3495-c98f-4fd5-8748-9aabd48d60f6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-20ce3495-c98f-4fd5-8748-9aabd48d60f6">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="coreapi:80/HealthCheck" target="_blank">coreapi:80/HealthCheck</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">7ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">40B</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">{&quot;appName&quot;:&quot;Admin&quot;,&quot;appVersion&quot;:&quot;1.0.0&quot;}</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Verify Header</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="panel-group" id="collapse-folder-f96d1a28-65d8-4ea4-bf4f-eb7a4bf3dd01" role="tablist" aria-multiselectable="true">
+            <div role="tab" id="folderHead-f96d1a28-65d8-4ea4-bf4f-eb7a4bf3dd01">
+                <h4 style="font-size: 18px;" class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#folderData-f96d1a28-65d8-4ea4-bf4f-eb7a4bf3dd01" aria-controls="collapseOne"><strong>ON-15: Get All Locations</strong></a></h4>
+            </div>
+            <br/>
+            <div id="folderData-f96d1a28-65d8-4ea4-bf4f-eb7a4bf3dd01" class="panel-collapse collapsed" role="tabpanel" aria-labelledby="folderHead-f96d1a28-65d8-4ea4-bf4f-eb7a4bf3dd01">
+                    <div class="panel-group" id="collapse-request-e693f7d4-0993-4ae7-93e2-406bb9a82531" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-e693f7d4-0993-4ae7-93e2-406bb9a82531">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-e693f7d4-0993-4ae7-93e2-406bb9a82531" aria-controls="collapseOne">Status Code is 200</a></h4>
+                            </div>
+            
+                            <div id="requestData-e693f7d4-0993-4ae7-93e2-406bb9a82531" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-e693f7d4-0993-4ae7-93e2-406bb9a82531">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="adminui:80/api/v1/locations" target="_blank">adminui:80/api/v1/locations</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">1815ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">4.4KB</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">[{&quot;id&quot;:&quot;afc67ecc-0ce8-4ca0-bed2-ceaca3676be2&quot;,&quot;storeName&quot;:&quot;Durham, Copper Mill&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;2f09f598-a91f-4139-983c-c688e003c6e4&quot;,&quot;storeName&quot;:&quot;Colorado Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;b33e9b6e-afb6-4bf4-89fe-88c41bbe53b2&quot;,&quot;storeName&quot;:&quot;El Paso&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;22af5fb0-6139-48fa-81e6-8bd5cd48588d&quot;,&quot;storeName&quot;:&quot;Oklahoma City&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;b0657911-434d-45d8-837a-59c39853b4e9&quot;,&quot;storeName&quot;:&quot;Durham, Downtown&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;0a166b9f-c490-4a11-94f0-dbf59a6ddf23&quot;,&quot;storeName&quot;:&quot;Radiator Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;d49d94b6-dc07-4e9c-ad23-94f19973fef7&quot;,&quot;storeName&quot;:&quot;Wall Street&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;c68bdaca-9ed7-4eb8-9ec9-81c60d97dc75&quot;,&quot;storeName&quot;:&quot;Abbey Street&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;439a690e-7507-450e-9db2-f36c0f6e2d6c&quot;,&quot;storeName&quot;:&quot;City Center&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;55103b64-cc40-4e90-81b6-80134591b410&quot;,&quot;storeName&quot;:&quot;Tampa City&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;46e54c84-5455-4f01-9c3a-a99f46e655c7&quot;,&quot;storeName&quot;:&quot;Desert Winds&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;00612891-acb5-4b5e-92ea-d70639adfe4d&quot;,&quot;storeName&quot;:&quot;Park Avenue&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;52124137-effb-4dea-a950-2b12d372a01e&quot;,&quot;storeName&quot;:&quot;Manhattan&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;44d10eb4-6297-41f3-8d09-7b514c62e11d&quot;,&quot;storeName&quot;:&quot;Bloom Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;f5328748-307e-4d27-aae1-e2f229755106&quot;,&quot;storeName&quot;:&quot;New City&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;32f29fa2-a126-4537-8b28-97bef1a1aafe&quot;,&quot;storeName&quot;:&quot;Old City&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;14d7ad66-3330-444d-9df8-30aec8779aee&quot;,&quot;storeName&quot;:&quot;Hitech City&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;60db7856-5f6d-48eb-9420-c7affecb7171&quot;,&quot;storeName&quot;:&quot;Area 66&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;486d80b1-26fd-43fd-875a-e89c05c1658b&quot;,&quot;storeName&quot;:&quot;Road Springs&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;dabce695-ec97-4f81-985a-291de0953be3&quot;,&quot;storeName&quot;:&quot;Random Street&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;35d6c75d-7e06-4efc-81c5-992ea33a1daa&quot;,&quot;storeName&quot;:&quot;Spring Blooms&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;b2281f43-5b89-49d3-88b5-ba4de87371ce&quot;,&quot;storeName&quot;:&quot;Random Alley&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156}]</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Verify Status code is 200</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-99970e8d-32ab-41df-ba7f-14fddef3f933" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-99970e8d-32ab-41df-ba7f-14fddef3f933">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-99970e8d-32ab-41df-ba7f-14fddef3f933" aria-controls="collapseOne">Result is an Array</a></h4>
+                            </div>
+            
+                            <div id="requestData-99970e8d-32ab-41df-ba7f-14fddef3f933" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-99970e8d-32ab-41df-ba7f-14fddef3f933">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="adminui:80/api/v1/locations" target="_blank">adminui:80/api/v1/locations</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">48ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">4.4KB</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">[{&quot;id&quot;:&quot;afc67ecc-0ce8-4ca0-bed2-ceaca3676be2&quot;,&quot;storeName&quot;:&quot;Durham, Copper Mill&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;2f09f598-a91f-4139-983c-c688e003c6e4&quot;,&quot;storeName&quot;:&quot;Colorado Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;b33e9b6e-afb6-4bf4-89fe-88c41bbe53b2&quot;,&quot;storeName&quot;:&quot;El Paso&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;22af5fb0-6139-48fa-81e6-8bd5cd48588d&quot;,&quot;storeName&quot;:&quot;Oklahoma City&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;b0657911-434d-45d8-837a-59c39853b4e9&quot;,&quot;storeName&quot;:&quot;Durham, Downtown&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;0a166b9f-c490-4a11-94f0-dbf59a6ddf23&quot;,&quot;storeName&quot;:&quot;Radiator Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;d49d94b6-dc07-4e9c-ad23-94f19973fef7&quot;,&quot;storeName&quot;:&quot;Wall Street&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;c68bdaca-9ed7-4eb8-9ec9-81c60d97dc75&quot;,&quot;storeName&quot;:&quot;Abbey Street&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;439a690e-7507-450e-9db2-f36c0f6e2d6c&quot;,&quot;storeName&quot;:&quot;City Center&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;55103b64-cc40-4e90-81b6-80134591b410&quot;,&quot;storeName&quot;:&quot;Tampa City&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;46e54c84-5455-4f01-9c3a-a99f46e655c7&quot;,&quot;storeName&quot;:&quot;Desert Winds&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;00612891-acb5-4b5e-92ea-d70639adfe4d&quot;,&quot;storeName&quot;:&quot;Park Avenue&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;52124137-effb-4dea-a950-2b12d372a01e&quot;,&quot;storeName&quot;:&quot;Manhattan&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;44d10eb4-6297-41f3-8d09-7b514c62e11d&quot;,&quot;storeName&quot;:&quot;Bloom Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;f5328748-307e-4d27-aae1-e2f229755106&quot;,&quot;storeName&quot;:&quot;New City&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;32f29fa2-a126-4537-8b28-97bef1a1aafe&quot;,&quot;storeName&quot;:&quot;Old City&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;14d7ad66-3330-444d-9df8-30aec8779aee&quot;,&quot;storeName&quot;:&quot;Hitech City&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;60db7856-5f6d-48eb-9420-c7affecb7171&quot;,&quot;storeName&quot;:&quot;Area 66&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;486d80b1-26fd-43fd-875a-e89c05c1658b&quot;,&quot;storeName&quot;:&quot;Road Springs&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;dabce695-ec97-4f81-985a-291de0953be3&quot;,&quot;storeName&quot;:&quot;Random Street&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;35d6c75d-7e06-4efc-81c5-992ea33a1daa&quot;,&quot;storeName&quot;:&quot;Spring Blooms&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;b2281f43-5b89-49d3-88b5-ba4de87371ce&quot;,&quot;storeName&quot;:&quot;Random Alley&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156}]</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Verify that the result is an Array</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-74686a3c-b600-4e1e-9e17-a646dda1865f" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-74686a3c-b600-4e1e-9e17-a646dda1865f">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-74686a3c-b600-4e1e-9e17-a646dda1865f" aria-controls="collapseOne">Verify keys for a location JSONObject record in the Array</a></h4>
+                            </div>
+            
+                            <div id="requestData-74686a3c-b600-4e1e-9e17-a646dda1865f" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-74686a3c-b600-4e1e-9e17-a646dda1865f">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="adminui:80/api/v1/locations" target="_blank">adminui:80/api/v1/locations</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">39ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">4.4KB</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">[{&quot;id&quot;:&quot;afc67ecc-0ce8-4ca0-bed2-ceaca3676be2&quot;,&quot;storeName&quot;:&quot;Durham, Copper Mill&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;2f09f598-a91f-4139-983c-c688e003c6e4&quot;,&quot;storeName&quot;:&quot;Colorado Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;b33e9b6e-afb6-4bf4-89fe-88c41bbe53b2&quot;,&quot;storeName&quot;:&quot;El Paso&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;22af5fb0-6139-48fa-81e6-8bd5cd48588d&quot;,&quot;storeName&quot;:&quot;Oklahoma City&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;b0657911-434d-45d8-837a-59c39853b4e9&quot;,&quot;storeName&quot;:&quot;Durham, Downtown&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;0a166b9f-c490-4a11-94f0-dbf59a6ddf23&quot;,&quot;storeName&quot;:&quot;Radiator Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;d49d94b6-dc07-4e9c-ad23-94f19973fef7&quot;,&quot;storeName&quot;:&quot;Wall Street&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;c68bdaca-9ed7-4eb8-9ec9-81c60d97dc75&quot;,&quot;storeName&quot;:&quot;Abbey Street&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;439a690e-7507-450e-9db2-f36c0f6e2d6c&quot;,&quot;storeName&quot;:&quot;City Center&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;55103b64-cc40-4e90-81b6-80134591b410&quot;,&quot;storeName&quot;:&quot;Tampa City&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;46e54c84-5455-4f01-9c3a-a99f46e655c7&quot;,&quot;storeName&quot;:&quot;Desert Winds&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;00612891-acb5-4b5e-92ea-d70639adfe4d&quot;,&quot;storeName&quot;:&quot;Park Avenue&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;52124137-effb-4dea-a950-2b12d372a01e&quot;,&quot;storeName&quot;:&quot;Manhattan&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;44d10eb4-6297-41f3-8d09-7b514c62e11d&quot;,&quot;storeName&quot;:&quot;Bloom Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;f5328748-307e-4d27-aae1-e2f229755106&quot;,&quot;storeName&quot;:&quot;New City&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;32f29fa2-a126-4537-8b28-97bef1a1aafe&quot;,&quot;storeName&quot;:&quot;Old City&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;14d7ad66-3330-444d-9df8-30aec8779aee&quot;,&quot;storeName&quot;:&quot;Hitech City&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;60db7856-5f6d-48eb-9420-c7affecb7171&quot;,&quot;storeName&quot;:&quot;Area 66&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;486d80b1-26fd-43fd-875a-e89c05c1658b&quot;,&quot;storeName&quot;:&quot;Road Springs&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;dabce695-ec97-4f81-985a-291de0953be3&quot;,&quot;storeName&quot;:&quot;Random Street&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;35d6c75d-7e06-4efc-81c5-992ea33a1daa&quot;,&quot;storeName&quot;:&quot;Spring Blooms&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;b2281f43-5b89-49d3-88b5-ba4de87371ce&quot;,&quot;storeName&quot;:&quot;Random Alley&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156}]</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Verify the keys for a location record</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-3723d299-0499-40bd-a8bb-bd669edadde4" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-3723d299-0499-40bd-a8bb-bd669edadde4">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-3723d299-0499-40bd-a8bb-bd669edadde4" aria-controls="collapseOne">Verify Header</a></h4>
+                            </div>
+            
+                            <div id="requestData-3723d299-0499-40bd-a8bb-bd669edadde4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-3723d299-0499-40bd-a8bb-bd669edadde4">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="adminui:80/api/v1/locations" target="_blank">adminui:80/api/v1/locations</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">11ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">4.4KB</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">[{&quot;id&quot;:&quot;afc67ecc-0ce8-4ca0-bed2-ceaca3676be2&quot;,&quot;storeName&quot;:&quot;Durham, Copper Mill&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;2f09f598-a91f-4139-983c-c688e003c6e4&quot;,&quot;storeName&quot;:&quot;Colorado Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;b33e9b6e-afb6-4bf4-89fe-88c41bbe53b2&quot;,&quot;storeName&quot;:&quot;El Paso&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;22af5fb0-6139-48fa-81e6-8bd5cd48588d&quot;,&quot;storeName&quot;:&quot;Oklahoma City&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;b0657911-434d-45d8-837a-59c39853b4e9&quot;,&quot;storeName&quot;:&quot;Durham, Downtown&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;0a166b9f-c490-4a11-94f0-dbf59a6ddf23&quot;,&quot;storeName&quot;:&quot;Radiator Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;d49d94b6-dc07-4e9c-ad23-94f19973fef7&quot;,&quot;storeName&quot;:&quot;Wall Street&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;c68bdaca-9ed7-4eb8-9ec9-81c60d97dc75&quot;,&quot;storeName&quot;:&quot;Abbey Street&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;439a690e-7507-450e-9db2-f36c0f6e2d6c&quot;,&quot;storeName&quot;:&quot;City Center&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;55103b64-cc40-4e90-81b6-80134591b410&quot;,&quot;storeName&quot;:&quot;Tampa City&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;46e54c84-5455-4f01-9c3a-a99f46e655c7&quot;,&quot;storeName&quot;:&quot;Desert Winds&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;00612891-acb5-4b5e-92ea-d70639adfe4d&quot;,&quot;storeName&quot;:&quot;Park Avenue&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;52124137-effb-4dea-a950-2b12d372a01e&quot;,&quot;storeName&quot;:&quot;Manhattan&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;44d10eb4-6297-41f3-8d09-7b514c62e11d&quot;,&quot;storeName&quot;:&quot;Bloom Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;f5328748-307e-4d27-aae1-e2f229755106&quot;,&quot;storeName&quot;:&quot;New City&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;32f29fa2-a126-4537-8b28-97bef1a1aafe&quot;,&quot;storeName&quot;:&quot;Old City&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;14d7ad66-3330-444d-9df8-30aec8779aee&quot;,&quot;storeName&quot;:&quot;Hitech City&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;60db7856-5f6d-48eb-9420-c7affecb7171&quot;,&quot;storeName&quot;:&quot;Area 66&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;486d80b1-26fd-43fd-875a-e89c05c1658b&quot;,&quot;storeName&quot;:&quot;Road Springs&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;dabce695-ec97-4f81-985a-291de0953be3&quot;,&quot;storeName&quot;:&quot;Random Street&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;35d6c75d-7e06-4efc-81c5-992ea33a1daa&quot;,&quot;storeName&quot;:&quot;Spring Blooms&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;b2281f43-5b89-49d3-88b5-ba4de87371ce&quot;,&quot;storeName&quot;:&quot;Random Alley&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156}]</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Verify Header</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-dce7e99e-c318-4fad-b654-cddbc33899ca" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-red" role="tab" id="requestHead-dce7e99e-c318-4fad-b654-cddbc33899ca">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-dce7e99e-c318-4fad-b654-cddbc33899ca" aria-controls="collapseOne">Verify that the newly added location record is available in the list</a></h4>
+                            </div>
+            
+                            <div id="requestData-dce7e99e-c318-4fad-b654-cddbc33899ca" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-dce7e99e-c318-4fad-b654-cddbc33899ca">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="adminui:80/api/v1/locations" target="_blank">adminui:80/api/v1/locations</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">17ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">4.4KB</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">0</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">2</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">[{&quot;id&quot;:&quot;afc67ecc-0ce8-4ca0-bed2-ceaca3676be2&quot;,&quot;storeName&quot;:&quot;Durham, Copper Mill&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;2f09f598-a91f-4139-983c-c688e003c6e4&quot;,&quot;storeName&quot;:&quot;Colorado Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;b33e9b6e-afb6-4bf4-89fe-88c41bbe53b2&quot;,&quot;storeName&quot;:&quot;El Paso&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;22af5fb0-6139-48fa-81e6-8bd5cd48588d&quot;,&quot;storeName&quot;:&quot;Oklahoma City&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;b0657911-434d-45d8-837a-59c39853b4e9&quot;,&quot;storeName&quot;:&quot;Durham, Downtown&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;0a166b9f-c490-4a11-94f0-dbf59a6ddf23&quot;,&quot;storeName&quot;:&quot;Radiator Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;d49d94b6-dc07-4e9c-ad23-94f19973fef7&quot;,&quot;storeName&quot;:&quot;Wall Street&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;c68bdaca-9ed7-4eb8-9ec9-81c60d97dc75&quot;,&quot;storeName&quot;:&quot;Abbey Street&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;439a690e-7507-450e-9db2-f36c0f6e2d6c&quot;,&quot;storeName&quot;:&quot;City Center&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;55103b64-cc40-4e90-81b6-80134591b410&quot;,&quot;storeName&quot;:&quot;Tampa City&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;46e54c84-5455-4f01-9c3a-a99f46e655c7&quot;,&quot;storeName&quot;:&quot;Desert Winds&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;00612891-acb5-4b5e-92ea-d70639adfe4d&quot;,&quot;storeName&quot;:&quot;Park Avenue&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;52124137-effb-4dea-a950-2b12d372a01e&quot;,&quot;storeName&quot;:&quot;Manhattan&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;44d10eb4-6297-41f3-8d09-7b514c62e11d&quot;,&quot;storeName&quot;:&quot;Bloom Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;f5328748-307e-4d27-aae1-e2f229755106&quot;,&quot;storeName&quot;:&quot;New City&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;32f29fa2-a126-4537-8b28-97bef1a1aafe&quot;,&quot;storeName&quot;:&quot;Old City&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;14d7ad66-3330-444d-9df8-30aec8779aee&quot;,&quot;storeName&quot;:&quot;Hitech City&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;60db7856-5f6d-48eb-9420-c7affecb7171&quot;,&quot;storeName&quot;:&quot;Area 66&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;486d80b1-26fd-43fd-875a-e89c05c1658b&quot;,&quot;storeName&quot;:&quot;Road Springs&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;dabce695-ec97-4f81-985a-291de0953be3&quot;,&quot;storeName&quot;:&quot;Random Street&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;35d6c75d-7e06-4efc-81c5-992ea33a1daa&quot;,&quot;storeName&quot;:&quot;Spring Blooms&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;b2281f43-5b89-49d3-88b5-ba4de87371ce&quot;,&quot;storeName&quot;:&quot;Random Alley&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156}]</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Verify details for the newly added store: ‘Automated_Postman_Store’</td><td >0</td><td  class="tego-bg-red">2</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="panel-group" id="collapse-folder-ceea13fd-fe90-40cd-8bdd-90c76a1c0c17" role="tablist" aria-multiselectable="true">
+            <div role="tab" id="folderHead-ceea13fd-fe90-40cd-8bdd-90c76a1c0c17">
+                <h4 style="font-size: 18px;" class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#folderData-ceea13fd-fe90-40cd-8bdd-90c76a1c0c17" aria-controls="collapseOne"><strong>ON-52 Get All Locations - Core API</strong></a></h4>
+            </div>
+            <br/>
+            <div id="folderData-ceea13fd-fe90-40cd-8bdd-90c76a1c0c17" class="panel-collapse collapsed" role="tabpanel" aria-labelledby="folderHead-ceea13fd-fe90-40cd-8bdd-90c76a1c0c17">
+                    <div class="panel-group" id="collapse-request-2c568367-634f-4325-b172-274c81d76357" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-2c568367-634f-4325-b172-274c81d76357">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-2c568367-634f-4325-b172-274c81d76357" aria-controls="collapseOne">Status Code is 200</a></h4>
+                            </div>
+            
+                            <div id="requestData-2c568367-634f-4325-b172-274c81d76357" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-2c568367-634f-4325-b172-274c81d76357">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="coreapi:80/locations" target="_blank">coreapi:80/locations</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">2.3s</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">4.4KB</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">[{&quot;id&quot;:&quot;afc67ecc-0ce8-4ca0-bed2-ceaca3676be2&quot;,&quot;storeName&quot;:&quot;Durham, Copper Mill&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;2f09f598-a91f-4139-983c-c688e003c6e4&quot;,&quot;storeName&quot;:&quot;Colorado Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;b33e9b6e-afb6-4bf4-89fe-88c41bbe53b2&quot;,&quot;storeName&quot;:&quot;El Paso&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;22af5fb0-6139-48fa-81e6-8bd5cd48588d&quot;,&quot;storeName&quot;:&quot;Oklahoma City&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;b0657911-434d-45d8-837a-59c39853b4e9&quot;,&quot;storeName&quot;:&quot;Durham, Downtown&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;0a166b9f-c490-4a11-94f0-dbf59a6ddf23&quot;,&quot;storeName&quot;:&quot;Radiator Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;d49d94b6-dc07-4e9c-ad23-94f19973fef7&quot;,&quot;storeName&quot;:&quot;Wall Street&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;c68bdaca-9ed7-4eb8-9ec9-81c60d97dc75&quot;,&quot;storeName&quot;:&quot;Abbey Street&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;439a690e-7507-450e-9db2-f36c0f6e2d6c&quot;,&quot;storeName&quot;:&quot;City Center&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;55103b64-cc40-4e90-81b6-80134591b410&quot;,&quot;storeName&quot;:&quot;Tampa City&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;46e54c84-5455-4f01-9c3a-a99f46e655c7&quot;,&quot;storeName&quot;:&quot;Desert Winds&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;00612891-acb5-4b5e-92ea-d70639adfe4d&quot;,&quot;storeName&quot;:&quot;Park Avenue&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;52124137-effb-4dea-a950-2b12d372a01e&quot;,&quot;storeName&quot;:&quot;Manhattan&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;44d10eb4-6297-41f3-8d09-7b514c62e11d&quot;,&quot;storeName&quot;:&quot;Bloom Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;f5328748-307e-4d27-aae1-e2f229755106&quot;,&quot;storeName&quot;:&quot;New City&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;32f29fa2-a126-4537-8b28-97bef1a1aafe&quot;,&quot;storeName&quot;:&quot;Old City&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;14d7ad66-3330-444d-9df8-30aec8779aee&quot;,&quot;storeName&quot;:&quot;Hitech City&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;60db7856-5f6d-48eb-9420-c7affecb7171&quot;,&quot;storeName&quot;:&quot;Area 66&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;486d80b1-26fd-43fd-875a-e89c05c1658b&quot;,&quot;storeName&quot;:&quot;Road Springs&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;dabce695-ec97-4f81-985a-291de0953be3&quot;,&quot;storeName&quot;:&quot;Random Street&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;35d6c75d-7e06-4efc-81c5-992ea33a1daa&quot;,&quot;storeName&quot;:&quot;Spring Blooms&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;b2281f43-5b89-49d3-88b5-ba4de87371ce&quot;,&quot;storeName&quot;:&quot;Random Alley&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156}]</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Verify Status code is 200</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-78575445-9abf-453f-bb1d-d0ce0935ff2c" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-78575445-9abf-453f-bb1d-d0ce0935ff2c">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-78575445-9abf-453f-bb1d-d0ce0935ff2c" aria-controls="collapseOne">Result is an Array</a></h4>
+                            </div>
+            
+                            <div id="requestData-78575445-9abf-453f-bb1d-d0ce0935ff2c" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-78575445-9abf-453f-bb1d-d0ce0935ff2c">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="coreapi:80/locations" target="_blank">coreapi:80/locations</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">61ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">4.4KB</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">[{&quot;id&quot;:&quot;afc67ecc-0ce8-4ca0-bed2-ceaca3676be2&quot;,&quot;storeName&quot;:&quot;Durham, Copper Mill&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;2f09f598-a91f-4139-983c-c688e003c6e4&quot;,&quot;storeName&quot;:&quot;Colorado Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;b33e9b6e-afb6-4bf4-89fe-88c41bbe53b2&quot;,&quot;storeName&quot;:&quot;El Paso&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;22af5fb0-6139-48fa-81e6-8bd5cd48588d&quot;,&quot;storeName&quot;:&quot;Oklahoma City&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;b0657911-434d-45d8-837a-59c39853b4e9&quot;,&quot;storeName&quot;:&quot;Durham, Downtown&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;0a166b9f-c490-4a11-94f0-dbf59a6ddf23&quot;,&quot;storeName&quot;:&quot;Radiator Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;d49d94b6-dc07-4e9c-ad23-94f19973fef7&quot;,&quot;storeName&quot;:&quot;Wall Street&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;c68bdaca-9ed7-4eb8-9ec9-81c60d97dc75&quot;,&quot;storeName&quot;:&quot;Abbey Street&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;439a690e-7507-450e-9db2-f36c0f6e2d6c&quot;,&quot;storeName&quot;:&quot;City Center&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;55103b64-cc40-4e90-81b6-80134591b410&quot;,&quot;storeName&quot;:&quot;Tampa City&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;46e54c84-5455-4f01-9c3a-a99f46e655c7&quot;,&quot;storeName&quot;:&quot;Desert Winds&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;00612891-acb5-4b5e-92ea-d70639adfe4d&quot;,&quot;storeName&quot;:&quot;Park Avenue&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;52124137-effb-4dea-a950-2b12d372a01e&quot;,&quot;storeName&quot;:&quot;Manhattan&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;44d10eb4-6297-41f3-8d09-7b514c62e11d&quot;,&quot;storeName&quot;:&quot;Bloom Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;f5328748-307e-4d27-aae1-e2f229755106&quot;,&quot;storeName&quot;:&quot;New City&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;32f29fa2-a126-4537-8b28-97bef1a1aafe&quot;,&quot;storeName&quot;:&quot;Old City&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;14d7ad66-3330-444d-9df8-30aec8779aee&quot;,&quot;storeName&quot;:&quot;Hitech City&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;60db7856-5f6d-48eb-9420-c7affecb7171&quot;,&quot;storeName&quot;:&quot;Area 66&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;486d80b1-26fd-43fd-875a-e89c05c1658b&quot;,&quot;storeName&quot;:&quot;Road Springs&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;dabce695-ec97-4f81-985a-291de0953be3&quot;,&quot;storeName&quot;:&quot;Random Street&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;35d6c75d-7e06-4efc-81c5-992ea33a1daa&quot;,&quot;storeName&quot;:&quot;Spring Blooms&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;b2281f43-5b89-49d3-88b5-ba4de87371ce&quot;,&quot;storeName&quot;:&quot;Random Alley&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156}]</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Verify that the result is an Array</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-0040bda6-e949-4a9e-9fe0-e71319826e2f" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-0040bda6-e949-4a9e-9fe0-e71319826e2f">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-0040bda6-e949-4a9e-9fe0-e71319826e2f" aria-controls="collapseOne">Verify keys for a JSONObject inside the array</a></h4>
+                            </div>
+            
+                            <div id="requestData-0040bda6-e949-4a9e-9fe0-e71319826e2f" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-0040bda6-e949-4a9e-9fe0-e71319826e2f">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="coreapi:80/locations" target="_blank">coreapi:80/locations</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">29ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">4.4KB</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">[{&quot;id&quot;:&quot;afc67ecc-0ce8-4ca0-bed2-ceaca3676be2&quot;,&quot;storeName&quot;:&quot;Durham, Copper Mill&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;2f09f598-a91f-4139-983c-c688e003c6e4&quot;,&quot;storeName&quot;:&quot;Colorado Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;b33e9b6e-afb6-4bf4-89fe-88c41bbe53b2&quot;,&quot;storeName&quot;:&quot;El Paso&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;22af5fb0-6139-48fa-81e6-8bd5cd48588d&quot;,&quot;storeName&quot;:&quot;Oklahoma City&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;b0657911-434d-45d8-837a-59c39853b4e9&quot;,&quot;storeName&quot;:&quot;Durham, Downtown&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;0a166b9f-c490-4a11-94f0-dbf59a6ddf23&quot;,&quot;storeName&quot;:&quot;Radiator Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;d49d94b6-dc07-4e9c-ad23-94f19973fef7&quot;,&quot;storeName&quot;:&quot;Wall Street&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;c68bdaca-9ed7-4eb8-9ec9-81c60d97dc75&quot;,&quot;storeName&quot;:&quot;Abbey Street&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;439a690e-7507-450e-9db2-f36c0f6e2d6c&quot;,&quot;storeName&quot;:&quot;City Center&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;55103b64-cc40-4e90-81b6-80134591b410&quot;,&quot;storeName&quot;:&quot;Tampa City&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;46e54c84-5455-4f01-9c3a-a99f46e655c7&quot;,&quot;storeName&quot;:&quot;Desert Winds&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;00612891-acb5-4b5e-92ea-d70639adfe4d&quot;,&quot;storeName&quot;:&quot;Park Avenue&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;52124137-effb-4dea-a950-2b12d372a01e&quot;,&quot;storeName&quot;:&quot;Manhattan&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;44d10eb4-6297-41f3-8d09-7b514c62e11d&quot;,&quot;storeName&quot;:&quot;Bloom Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;f5328748-307e-4d27-aae1-e2f229755106&quot;,&quot;storeName&quot;:&quot;New City&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;32f29fa2-a126-4537-8b28-97bef1a1aafe&quot;,&quot;storeName&quot;:&quot;Old City&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;14d7ad66-3330-444d-9df8-30aec8779aee&quot;,&quot;storeName&quot;:&quot;Hitech City&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;60db7856-5f6d-48eb-9420-c7affecb7171&quot;,&quot;storeName&quot;:&quot;Area 66&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;486d80b1-26fd-43fd-875a-e89c05c1658b&quot;,&quot;storeName&quot;:&quot;Road Springs&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;dabce695-ec97-4f81-985a-291de0953be3&quot;,&quot;storeName&quot;:&quot;Random Street&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;35d6c75d-7e06-4efc-81c5-992ea33a1daa&quot;,&quot;storeName&quot;:&quot;Spring Blooms&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;b2281f43-5b89-49d3-88b5-ba4de87371ce&quot;,&quot;storeName&quot;:&quot;Random Alley&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156}]</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Verify the keys for a location record</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-95b8e004-bf9f-4aa8-972c-17771e659501" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-95b8e004-bf9f-4aa8-972c-17771e659501">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-95b8e004-bf9f-4aa8-972c-17771e659501" aria-controls="collapseOne">Verify Header</a></h4>
+                            </div>
+            
+                            <div id="requestData-95b8e004-bf9f-4aa8-972c-17771e659501" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-95b8e004-bf9f-4aa8-972c-17771e659501">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="coreapi:80/locations" target="_blank">coreapi:80/locations</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">10ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">4.4KB</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">[{&quot;id&quot;:&quot;afc67ecc-0ce8-4ca0-bed2-ceaca3676be2&quot;,&quot;storeName&quot;:&quot;Durham, Copper Mill&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;2f09f598-a91f-4139-983c-c688e003c6e4&quot;,&quot;storeName&quot;:&quot;Colorado Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;b33e9b6e-afb6-4bf4-89fe-88c41bbe53b2&quot;,&quot;storeName&quot;:&quot;El Paso&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;22af5fb0-6139-48fa-81e6-8bd5cd48588d&quot;,&quot;storeName&quot;:&quot;Oklahoma City&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;b0657911-434d-45d8-837a-59c39853b4e9&quot;,&quot;storeName&quot;:&quot;Durham, Downtown&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;0a166b9f-c490-4a11-94f0-dbf59a6ddf23&quot;,&quot;storeName&quot;:&quot;Radiator Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;d49d94b6-dc07-4e9c-ad23-94f19973fef7&quot;,&quot;storeName&quot;:&quot;Wall Street&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;c68bdaca-9ed7-4eb8-9ec9-81c60d97dc75&quot;,&quot;storeName&quot;:&quot;Abbey Street&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;439a690e-7507-450e-9db2-f36c0f6e2d6c&quot;,&quot;storeName&quot;:&quot;City Center&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;55103b64-cc40-4e90-81b6-80134591b410&quot;,&quot;storeName&quot;:&quot;Tampa City&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;46e54c84-5455-4f01-9c3a-a99f46e655c7&quot;,&quot;storeName&quot;:&quot;Desert Winds&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;00612891-acb5-4b5e-92ea-d70639adfe4d&quot;,&quot;storeName&quot;:&quot;Park Avenue&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;52124137-effb-4dea-a950-2b12d372a01e&quot;,&quot;storeName&quot;:&quot;Manhattan&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;44d10eb4-6297-41f3-8d09-7b514c62e11d&quot;,&quot;storeName&quot;:&quot;Bloom Springs&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;f5328748-307e-4d27-aae1-e2f229755106&quot;,&quot;storeName&quot;:&quot;New City&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;32f29fa2-a126-4537-8b28-97bef1a1aafe&quot;,&quot;storeName&quot;:&quot;Old City&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;14d7ad66-3330-444d-9df8-30aec8779aee&quot;,&quot;storeName&quot;:&quot;Hitech City&quot;,&quot;address&quot;:&quot;3104 NC-751 Ste 101 &amp; 102, Durham, NC 27707, United States&quot;,&quot;latitude&quot;:40.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;60db7856-5f6d-48eb-9420-c7affecb7171&quot;,&quot;storeName&quot;:&quot;Area 66&quot;,&quot;address&quot;:&quot;2630 S Academy Blvd, Colorado Springs, CO 80910, United States&quot;,&quot;latitude&quot;:45.712799072265625,&quot;longitude&quot;:-84.00599670410156},{&quot;id&quot;:&quot;486d80b1-26fd-43fd-875a-e89c05c1658b&quot;,&quot;storeName&quot;:&quot;Road Springs&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;dabce695-ec97-4f81-985a-291de0953be3&quot;,&quot;storeName&quot;:&quot;Random Street&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156},{&quot;id&quot;:&quot;35d6c75d-7e06-4efc-81c5-992ea33a1daa&quot;,&quot;storeName&quot;:&quot;Spring Blooms&quot;,&quot;address&quot;:&quot;1291 N Zaragoza Rd, El Paso, TX 79938, United States&quot;,&quot;latitude&quot;:35.712799072265625,&quot;longitude&quot;:-74.00599670410156},{&quot;id&quot;:&quot;b2281f43-5b89-49d3-88b5-ba4de87371ce&quot;,&quot;storeName&quot;:&quot;Random Alley&quot;,&quot;address&quot;:&quot;1905 S Western Ave b, Oklahoma City, OK 73109, United States&quot;,&quot;latitude&quot;:30.712799072265625,&quot;longitude&quot;:-79.00599670410156}]</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Verify Header</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
+
