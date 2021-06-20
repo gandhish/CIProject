@@ -1,8 +1,0 @@
-stages:
-- test
-
-postman_tests:
-  stage: test
-  image: quickrestaurant_postman_tests
-  command:
-    run WRIOnboardingAdminTests.postman_collection.json --reporters=cli,htmlextra --reporter-htmlextra-export "reports/"
