@@ -19,7 +19,8 @@ jobs:
         id: run-newman
         run: docker-compose up     
       - name: Output the run Details
-        uses: actions/upload-artifact@v2.2.4           
+        #uses: actions/upload-artifact@v2.2.4
+        uses: ishworkh/docker-image-artifact-upload@v1
         with: 
           name: RunReports
           path: testResults
