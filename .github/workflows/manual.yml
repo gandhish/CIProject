@@ -15,9 +15,9 @@ jobs:
       - uses: actions/checkout@main
       - name: Postman Scripts Run
         run: docker-compose up
-        
-      - uses: actions/upload-artifact@main  
-      - name: Output the run Details      
+      
+      - name: Output the run Details
+        uses: actions/upload-artifact@main           
         with: 
           name: RunReports
           path: Reports
