@@ -15,20 +15,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.3.4
+        name: Checkout code
       # Install Node on the runner
-      - name: Install Node
+      - name: Install Node.js
         uses: actions/setup-node@v1
         with: 
           node-version: '16.x'
     
     # Install the newman command line utility and also install the html extra reporter
-      - name: Install newman
+      - name: Install newman and the HTML reporting add-on
         run: |
           npm install -g newman
           npm install -g newman-reporter-htmlextra
 
     # Make directory to upload the test results
-      - name: Make Directory for results
+      - name: Make Directory to upload test results
         run: mkdir -p testArtifacts
 
     # Run the POSTMAN collection
@@ -37,7 +38,7 @@ jobs:
           newman run ./QuickRestaurant.QA.Tests/postman/DummyPostmanCollection.json -r htmlextra --reporter-htmlextra-export testArtifacts/htmlreport.html > testArtifacts/report1.html
 
     # Upload the contents of Test Results directory to workspace
-      - name: Output the run Details
+      - name: Upload run results
         uses: actions/upload-artifact@v2
         with: 
           name: SmokeTestReports
