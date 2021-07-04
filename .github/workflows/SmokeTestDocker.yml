@@ -1,0 +1,21 @@
+name: PostmanTestsWorkflow_Docker
+
+on: 
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  Run_Postman_Scripts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.4
+        name: Checkout code
+      # Install Node on the runner
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with: 
+          node-version: '16.x'
