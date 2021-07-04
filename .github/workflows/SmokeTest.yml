@@ -1,0 +1,44 @@
+# This is a basic workflow that is manually triggered
+
+name: PostmanTestsWorkflow
+
+on: 
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  Run_Postman_Scripts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.4
+      # Install Node on the runner
+      - name: Install Node
+        uses: actions/setup-node@v1
+        with: 
+          node-version: '16.x'
+    
+    # Install the newman command line utility and also install the html extra reporter
+      - name: Install newman
+        run: |
+          npm install -g newman
+          npm install -g newman-reporter-htmlextra
+
+    # Make directory to upload the test results
+      - name: Make Directory for results
+        run: mkdir -p testArtifacts
+
+    # Run the POSTMAN collection
+      - name: Run POSTMAN collection
+        run: |
+          newman run ./QuickRestaurant.QA.Tests/postman/DummyPostmanCollection.json -r htmlextra --reporter-htmlextra-export testArtifacts/htmlreport.html > testArtifacts/report1.html
+
+    # Upload the contents of Test Results directory to workspace
+      - name: Output the run Details
+        uses: actions/upload-artifact@v2
+        with: 
+          name: SmokeTestReports
+          path: testArtifacts
