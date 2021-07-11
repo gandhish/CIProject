@@ -1,10 +1,11 @@
 name: PostmanTestsWorkflow_Docker
 
+#Trigger
 on: 
   push:
     branches:
       - main
-
+#Response
 jobs:
   Run_Postman_Scripts:
     runs-on: ubuntu-latest
