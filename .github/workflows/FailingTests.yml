@@ -46,5 +46,5 @@ jobs:
         with: 
           name: SmokeTestReports
           path: testArtifacts
-          condition: always()
+          condition: always
 
