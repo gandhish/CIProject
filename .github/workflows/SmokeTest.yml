@@ -36,7 +36,7 @@ jobs:
     # Run the POSTMAN collection
       - name: Run POSTMAN collection
         run: |
-          newman run ./QuickRestaurant.QA.Tests/postman/AWSTests.json --env-var coreapiurl=alpha.qsr.world/api/v1
+          newman run ./QuickRestaurant.QA.Tests/postman/AWSTests.json --env-var coreapiurl=alpha.qsr.world/api/v1/
       - name: Output summary to console
         run: echo ${{ steps.run-newman.outputs.summary }}
         
