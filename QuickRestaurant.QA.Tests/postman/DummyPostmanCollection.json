@@ -139,10 +139,6 @@
 	],
 	"variable": [
 		{
-			"key": "url",
-			"value": "https://reqres.in"
-		},
-		{
 			"key": "userid",
 			"value": "2"
 		}

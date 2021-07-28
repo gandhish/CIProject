@@ -36,11 +36,14 @@ jobs:
     # Run the POSTMAN collection
       - name: Run POSTMAN collection
         run: |
-          newman run ./QuickRestaurant.QA.Tests/postman/QSRPostmanTests.json --env-var coreAPIURL=alpha.qsr.world/api/v1 -r htmlextra --reporter-htmlextra-export testArtifacts/htmlreport.html > testArtifacts/report1.html
-
+          newman run ./QuickRestaurant.QA.Tests/postman/QSRPostmanTests.json coreAPIURL=alpha.qsr.world/api/v1 -r htmlextra --reporter-htmlextra-export testArtifacts/htmlreport.html > testArtifacts/report1.html
+      - name: Output summary to console
+        run: echo ${{ steps.run-newman.outputs.summary }}
+        
     # Upload the contents of Test Results directory to workspace
       - name: Upload run results
         uses: actions/upload-artifact@v2
         with: 
           name: SmokeTestReports
           path: testArtifacts
+
