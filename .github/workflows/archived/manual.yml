@@ -1,0 +1,21 @@
+# Workflow
+name: NewmanWorkflow
+
+#Triggers
+on: 
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  newman:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: matt-ball/newman-action@master
+        with:          
+          collection: ./QuickRestaurant.QA.Tests/postman/QSRPostmanTests.json
+          environment: ./QuickRestaurant.QA.Tests/postman/TestEnvironment.json
