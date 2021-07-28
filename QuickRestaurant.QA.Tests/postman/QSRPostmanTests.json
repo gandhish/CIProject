@@ -1,0 +1,1041 @@
+{
+	"info": {
+		"_postman_id": "fd39f4ed-dccd-47d2-9e29-3992709a4a2c",
+		"name": "QSRTestCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "HealthCheck",
+			"item": [
+				{
+					"name": "Status Code is 200",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"user-agent": true,
+							"accept-encoding": true,
+							"connection": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{coreAPIURL}}/HealthCheck",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"HealthCheck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify property appName and its value",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify Property: appName available and matches 'Admin'\", function () {",
+									"   var jsonData = pm.response.json();",
+									"   pm.expect(jsonData).have.property('appName', 'Admin');",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"user-agent": true,
+							"accept-encoding": true,
+							"connection": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{coreAPIURL}}/HealthCheck",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"HealthCheck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify property appVersion and its value",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify Property: appVersion available and matches '1.0.0' matches\", function () {",
+									"   var jsonData = pm.response.json();",
+									"   pm.expect(jsonData).have.property('appVersion', '1.0.0');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"user-agent": true,
+							"accept-encoding": true,
+							"connection": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{coreAPIURL}}/HealthCheck",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"HealthCheck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Header",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify Header\", function () {",
+									"    pm.response.to.have.header(\"Content-Type\");",
+									"    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"user-agent": true,
+							"accept-encoding": true,
+							"connection": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{coreAPIURL}}/HealthCheck",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"HealthCheck"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ON-52 Get All Locations - Core API",
+			"item": [
+				{
+					"name": "Status Code is 200",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{coreAPIURL}}/locations",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"locations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Result is an Array",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify that the result is an Array\", function () {",
+									"    let jsonData = pm.response.json()",
+									"    pm.expect(jsonData).to.be.an(\"array\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{coreAPIURL}}/locations",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"locations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify keys for a JSONObject inside the array",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify the keys for a location record\", function () {",
+									"    var data = JSON.parse(responseBody);",
+									"    data.forEach(function(item) {",
+									"      pm.expect(item).to.have.all.keys('id', 'storeName', 'address', 'latitude', 'longitude'); ",
+									"  });    ",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{coreAPIURL}}/locations",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"locations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Header",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify Header\", function () {",
+									"    pm.response.to.have.header(\"Content-Type\");",
+									"    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{coreAPIURL}}/locations",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"locations"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ON-16: Query Core API by Latitude and Longitude",
+			"item": [
+				{
+					"name": "Status Code is 200",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{coreAPIURL}}/nearby?latitude=41.78&longitude=-72.66&limit=9",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"nearby"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "41.78"
+								},
+								{
+									"key": "longitude",
+									"value": "-72.66"
+								},
+								{
+									"key": "limit",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify number of records = limit specified (under 10)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Number of Results = 6\", function () {",
+									"    pm.expect(Object.keys(pm.response.json()).length).to.eql(6);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{coreAPIURL}}/nearby?latitude=-90&longitude=-180&limit=6",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"nearby"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "-90"
+								},
+								{
+									"key": "longitude",
+									"value": "-180"
+								},
+								{
+									"key": "limit",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify number of records = 10 when limit specified > 10",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Number of Results = 10 even though a limit of 12 was specified\", function () {",
+									"    pm.expect(Object.keys(pm.response.json()).length).to.eql(10);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{coreAPIURL}}/nearby?latitude=-90&longitude=-180&limit=12",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"nearby"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "-90"
+								},
+								{
+									"key": "longitude",
+									"value": "-180"
+								},
+								{
+									"key": "limit",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Bad Request when invalid Latitude and Longitude values specified",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {",
+									"    pm.response.to.have.status(400);",
+									"});",
+									"",
+									"pm.test(\"Verify Error Messages\", function () {",
+									"    const responseJson = pm.response.json();",
+									"    console.log(responseJson.errors.Latitude[0])",
+									"    pm.expect(responseJson.errors.Latitude[0]).to.eql(\"The value 'foo' is not valid for Latitude.\");",
+									"    pm.expect(responseJson.errors.Latitude[1]).to.eql(\"A value for the 'Latitude' parameter or property was not provided.\");",
+									"    pm.expect(responseJson.errors.Longitude[0]).to.eql(\"The value 'bar' is not valid for Longitude.\");",
+									"    pm.expect(responseJson.errors.Longitude[1]).to.eql(\"A value for the 'Longitude' parameter or property was not provided.\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{coreAPIURL}}/nearby?latitude=foo&longitude=bar&limit=5",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"nearby"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "foo"
+								},
+								{
+									"key": "longitude",
+									"value": "bar"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Result is an Array",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify that the result is an Array\", function () {",
+									"    let jsonData = pm.response.json()",
+									"    pm.expect(jsonData).to.be.an(\"array\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{coreAPIURL}}/nearby?latitude=-90&longitude=-180&limit=2",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"nearby"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "-90"
+								},
+								{
+									"key": "longitude",
+									"value": "-180"
+								},
+								{
+									"key": "limit",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify keys for a JSONObject inside the array",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify the keys for a location record\", function () {",
+									"    var data = JSON.parse(responseBody);",
+									"    data.forEach(function(item) {",
+									"      pm.expect(item).to.have.all.keys('id', 'storeName', 'address', 'latitude', 'longitude', 'distance'); ",
+									"  });    ",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{coreAPIURL}}/nearby?latitude=90&longitude=180&limit=5",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"nearby"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "90"
+								},
+								{
+									"key": "longitude",
+									"value": "180"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Bad Request when latitude > 90",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {",
+									"    pm.response.to.have.status(400);",
+									"    const responseJson = pm.response.json();",
+									"    pm.expect(responseJson.title).to.eql(\"Bad Request\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{coreAPIURL}}/nearby?latitude=90.1&longitude=-18&limit=9",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"nearby"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "90.1"
+								},
+								{
+									"key": "longitude",
+									"value": "-18"
+								},
+								{
+									"key": "limit",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Bad Request when latitude < -90",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {",
+									"    pm.response.to.have.status(400);",
+									"    const responseJson = pm.response.json();",
+									"    pm.expect(responseJson.title).to.eql(\"Bad Request\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{coreAPIURL}}/nearby?latitude=-91&longitude=-18&limit=9",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"nearby"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "-91"
+								},
+								{
+									"key": "longitude",
+									"value": "-18"
+								},
+								{
+									"key": "limit",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Bad Request when Longitude > 180",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {",
+									"    pm.response.to.have.status(400);",
+									"    const responseJson = pm.response.json();",
+									"    pm.expect(responseJson.title).to.eql(\"Bad Request\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{coreAPIURL}}/nearby?latitude=90&longitude=180.01&limit=9",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"nearby"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "90"
+								},
+								{
+									"key": "longitude",
+									"value": "180.01"
+								},
+								{
+									"key": "limit",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Bad Request when Longitude < 180",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {",
+									"    pm.response.to.have.status(400);",
+									"    const responseJson = pm.response.json();",
+									"    pm.expect(responseJson.title).to.eql(\"Bad Request\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{coreAPIURL}}/nearby?latitude=15&longitude=-181&limit=10",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"nearby"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "15"
+								},
+								{
+									"key": "longitude",
+									"value": "-181"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify number of records = 10 when NO limit specified",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Number of Results = 10 when NO limit has been specified\", function () {",
+									"    pm.expect(Object.keys(pm.response.json()).length).to.eql(10);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{coreAPIURL}}/nearby?latitude=11.0940&longitude=-44.12",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"nearby"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "11.0940"
+								},
+								{
+									"key": "longitude",
+									"value": "-44.12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Bad Request when invalid Latitude value specified",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {",
+									"    pm.response.to.have.status(400);",
+									"});",
+									"",
+									"pm.test(\"Verify Error Message\", function () {",
+									"    const responseJson = pm.response.json();",
+									"    pm.expect(responseJson.errors.Latitude[0]).to.eql(\"The value 'foo' is not valid for Latitude.\");",
+									"    pm.expect(responseJson.errors.Latitude[1]).to.eql(\"A value for the 'Latitude' parameter or property was not provided.\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{coreAPIURL}}/nearby?latitude=foo&longitude=10&limit=5",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"nearby"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "foo"
+								},
+								{
+									"key": "longitude",
+									"value": "10"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Bad Request when invalid Longitude value specified",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {",
+									"    pm.response.to.have.status(400);",
+									"});",
+									"",
+									"pm.test(\"Verify Error Message\", function () {",
+									"    const responseJson = pm.response.json();",
+									"    pm.expect(responseJson.errors.Longitude[0]).to.eql(\"The value 'bar' is not valid for Longitude.\");",
+									"    pm.expect(responseJson.errors.Longitude[1]).to.eql(\"A value for the 'Longitude' parameter or property was not provided.\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{coreAPIURL}}/nearby?latitude=79&longitude=bar&limit=5",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"nearby"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "79"
+								},
+								{
+									"key": "longitude",
+									"value": "bar"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Bad Request when Latitude is not specified",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {",
+									"    pm.response.to.have.status(400);",
+									"});",
+									"",
+									"pm.test(\"Verify Error Message\", function () {",
+									"    const responseJson = pm.response.json();",
+									"    pm.expect(responseJson.errors.Latitude[0]).to.eql(\"A value for the 'Latitude' parameter or property was not provided.\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{coreAPIURL}}/nearby?longitude=15&limit=5",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"nearby"
+							],
+							"query": [
+								{
+									"key": "longitude",
+									"value": "15"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Bad Request when Longitude is not specified",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {",
+									"    pm.response.to.have.status(400);",
+									"});",
+									"",
+									"pm.test(\"Verify Error Message\", function () {",
+									"    const responseJson = pm.response.json();",
+									"    pm.expect(responseJson.errors.Longitude[0]).to.eql(\"A value for the 'Longitude' parameter or property was not provided.\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{coreAPIURL}}/nearby?latitude=15&limit=5",
+							"host": [
+								"{{coreAPIURL}}"
+							],
+							"path": [
+								"nearby"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "15"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
