@@ -36,7 +36,7 @@ jobs:
     # Run the POSTMAN collection
       - name: Run POSTMAN collection
         run: >
-          newman run ./QuickRestaurant.QA.Tests/postman/AWSTests.json 
+          newman run ./QuickRestaurant.QA.Tests/postman/QSRPostmanTests.json
           --env-var coreapiurl=alpha.qsr.world/api/v1
           -r cli,htmlextra --reporter-htmlextra-export testArtifacts/TestsReport.html
         
