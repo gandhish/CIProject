@@ -43,8 +43,8 @@ jobs:
     # Upload the contents of Test Results directory to workspace
       - name: Upload run results
         uses: actions/upload-artifact@v2
+        if: always()
         with: 
           name: SmokeTestReports
           path: testArtifacts
-          condition: always
 
