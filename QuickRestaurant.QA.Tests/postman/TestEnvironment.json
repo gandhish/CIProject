@@ -3,8 +3,8 @@
 	"name": "TestEnvironment",
 	"values": [
 		{
-			"key": "coreAPIURL",
-			"value": "coreapi:5001",
+			"key": "coreapiurl",
+			"value": "alpha.qsr.world/api/v1",
 			"enabled": true
 		}
 	],
