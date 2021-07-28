@@ -12,7 +12,7 @@ on:
 
 #Response
 jobs:
-  Run_Postman_Scripts:
+ Run_Postman_Scripts:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.3.4
@@ -48,3 +48,9 @@ jobs:
           name: SmokeTestReports
           path: testArtifacts
 
+ Run_K6_Scripts:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Run K6 script
+      uses: k6io/action@v0.1
+     
