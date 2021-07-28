@@ -41,9 +41,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{coreAPIURL}}/HealthCheck",
+							"raw": "{{coreapiurl}}/HealthCheck",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"HealthCheck"
@@ -87,9 +87,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{coreAPIURL}}/HealthCheck",
+							"raw": "{{coreapiurl}}/HealthCheck",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"HealthCheck"
@@ -132,9 +132,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{coreAPIURL}}/HealthCheck",
+							"raw": "{{coreapiurl}}/HealthCheck",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"HealthCheck"
@@ -178,9 +178,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{coreAPIURL}}/HealthCheck",
+							"raw": "{{coreapiurl}}/HealthCheck",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"HealthCheck"
@@ -213,9 +213,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{coreAPIURL}}/locations",
+							"raw": "{{coreapiurl}}/locations",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"locations"
@@ -244,9 +244,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{coreAPIURL}}/locations",
+							"raw": "{{coreapiurl}}/locations",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"locations"
@@ -277,9 +277,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{coreAPIURL}}/locations",
+							"raw": "{{coreapiurl}}/locations",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"locations"
@@ -308,9 +308,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{coreAPIURL}}/locations",
+							"raw": "{{coreapiurl}}/locations",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"locations"
@@ -343,9 +343,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{coreAPIURL}}/nearby?latitude=41.78&longitude=-72.66&limit=9",
+							"raw": "{{coreapiurl}}/nearby?latitude=41.78&longitude=-72.66&limit=9",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"nearby"
@@ -387,9 +387,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{coreAPIURL}}/nearby?latitude=-90&longitude=-180&limit=6",
+							"raw": "{{coreapiurl}}/nearby?latitude=-90&longitude=-180&limit=6",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"nearby"
@@ -431,9 +431,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{coreAPIURL}}/nearby?latitude=-90&longitude=-180&limit=12",
+							"raw": "{{coreapiurl}}/nearby?latitude=-90&longitude=-180&limit=12",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"nearby"
@@ -484,9 +484,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{coreAPIURL}}/nearby?latitude=foo&longitude=bar&limit=5",
+							"raw": "{{coreapiurl}}/nearby?latitude=foo&longitude=bar&limit=5",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"nearby"
@@ -529,9 +529,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{coreAPIURL}}/nearby?latitude=-90&longitude=-180&limit=2",
+							"raw": "{{coreapiurl}}/nearby?latitude=-90&longitude=-180&limit=2",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"nearby"
@@ -576,9 +576,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{coreAPIURL}}/nearby?latitude=90&longitude=180&limit=5",
+							"raw": "{{coreapiurl}}/nearby?latitude=90&longitude=180&limit=5",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"nearby"
@@ -622,9 +622,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{coreAPIURL}}/nearby?latitude=90.1&longitude=-18&limit=9",
+							"raw": "{{coreapiurl}}/nearby?latitude=90.1&longitude=-18&limit=9",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"nearby"
@@ -668,9 +668,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{coreAPIURL}}/nearby?latitude=-91&longitude=-18&limit=9",
+							"raw": "{{coreapiurl}}/nearby?latitude=-91&longitude=-18&limit=9",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"nearby"
@@ -714,9 +714,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{coreAPIURL}}/nearby?latitude=90&longitude=180.01&limit=9",
+							"raw": "{{coreapiurl}}/nearby?latitude=90&longitude=180.01&limit=9",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"nearby"
@@ -760,9 +760,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{coreAPIURL}}/nearby?latitude=15&longitude=-181&limit=10",
+							"raw": "{{coreapiurl}}/nearby?latitude=15&longitude=-181&limit=10",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"nearby"
@@ -804,9 +804,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{coreAPIURL}}/nearby?latitude=11.0940&longitude=-44.12",
+							"raw": "{{coreapiurl}}/nearby?latitude=11.0940&longitude=-44.12",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"nearby"
@@ -850,9 +850,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{coreAPIURL}}/nearby?latitude=foo&longitude=10&limit=5",
+							"raw": "{{coreapiurl}}/nearby?latitude=foo&longitude=10&limit=5",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"nearby"
@@ -900,9 +900,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{coreAPIURL}}/nearby?latitude=79&longitude=bar&limit=5",
+							"raw": "{{coreapiurl}}/nearby?latitude=79&longitude=bar&limit=5",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"nearby"
@@ -949,9 +949,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{coreAPIURL}}/nearby?longitude=15&limit=5",
+							"raw": "{{coreapiurl}}/nearby?longitude=15&limit=5",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"nearby"
@@ -994,9 +994,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{coreAPIURL}}/nearby?latitude=15&limit=5",
+							"raw": "{{coreapiurl}}/nearby?latitude=15&limit=5",
 							"host": [
-								"{{coreAPIURL}}"
+								"{{coreapiurl}}"
 							],
 							"path": [
 								"nearby"
