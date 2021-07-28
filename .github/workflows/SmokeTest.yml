@@ -38,7 +38,7 @@ jobs:
         run: >
           newman run ./QuickRestaurant.QA.Tests/postman/AWSTests.json 
           --env-var coreapiurl=alpha.qsr.world/api/v1
-          -r cli,htmlextra --reporter-htmlextra-export testArtifacts/htmlreport.html > testArtifacts/report1.html
+          -r cli,htmlextra --reporter-htmlextra-export testArtifacts/htmlreport.html
       - name: Output summary to console
         run: echo ${{ steps.run-newman.outputs.summary }}
         
