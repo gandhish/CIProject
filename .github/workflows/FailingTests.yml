@@ -48,9 +48,15 @@ jobs:
           name: SmokeTestReports
           path: testArtifacts
 
- Run_K6_Scripts:
+ LoadTestWithK6:
   runs-on: ubuntu-latest
   steps:
-    - name: Run K6 script
-      uses: k6io/action@v0.1
+  - uses: actions/checkout@v2.3.4
+    name: Checkout code
+  - name: Run K6 script
+    uses: k6io/action@v0.1
+    with:
+      filename: ./QuickRestaurant.QA.Tests/performance/HealthCheck/LoadTest.js
+    env:
+      QSR__API_BASEURL: alpha.qsr.world/api/v1
      
