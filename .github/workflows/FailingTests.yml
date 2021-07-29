@@ -43,7 +43,7 @@ jobs:
         if: always()
         with: 
           name: SmokeTestReports
-          path: testArtifacts
+          path: ./QuickRestaurant.QA.Tests/postman/reports/
 
  LoadTestWithK6:
   runs-on: ubuntu-latest
