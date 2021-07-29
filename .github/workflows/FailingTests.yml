@@ -50,6 +50,7 @@ jobs:
 
  LoadTestWithK6:
   runs-on: ubuntu-latest
+  needs: Run_Postman_Scripts
   steps:
   - uses: actions/checkout@v2.3.4
     name: Checkout code
