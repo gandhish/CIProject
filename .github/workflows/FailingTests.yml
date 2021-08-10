@@ -29,16 +29,13 @@ jobs:
           npm install -g newman
           npm install -g newman-reporter-htmlextra
 
-    # Make directory to upload the test results
-      - name: Make Directory to upload test results
-        run: mkdir -p testArtifacts
 
     # Run the POSTMAN collection
       - name: Run POSTMAN collection
         run: >
           newman run ./QuickRestaurant.QA.Tests/postman/QSRPostmanTests.json
           --env-var coreapiurl=alpha.qsr.world/api/v1
-          -r cli,htmlextra --reporter-htmlextra-export testArtifacts/TestsReport.html
+          -r cli,htmlextra --reporter-htmlextra-export ./QuickRestaurant.QA.Tests/postman/reports/TestsReport.html
         
     # Upload the contents of Test Results directory to workspace
       - name: Upload run results
@@ -46,10 +43,11 @@ jobs:
         if: always()
         with: 
           name: SmokeTestReports
-          path: testArtifacts
+          path: ./QuickRestaurant.QA.Tests/postman/reports/
 
  LoadTestWithK6:
   runs-on: ubuntu-latest
+  needs: Run_Postman_Scripts
   steps:
   - uses: actions/checkout@v2.3.4
     name: Checkout code
