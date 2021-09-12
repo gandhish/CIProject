@@ -1,5 +1,5 @@
 # Workflow
-name: DemoPostmanTestsWorkflow
+name: NewmanActionWorkflow
 
 #Triggers
 on: 
