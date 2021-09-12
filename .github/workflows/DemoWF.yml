@@ -37,10 +37,10 @@ jobs:
         newman run ./QuickRestaurant.QA.Tests/postman/AWSTests.json 
         --env-var coreapiurl=alpha.qsr.world/api/v1
         -r cli,htmlextra --reporter-htmlextra-export testArtifacts/TestsReport.html
-        
-        - name: Upload run results
-        uses: actions/upload-artifact@v2
-        with: 
-          name: SmokeTestReports
-          path: testArtifacts
+     #Upload run results   
+    - name: Upload run results
+      uses: actions/upload-artifact@v2
+      with: 
+        name: SmokeTestReports
+        path: testArtifacts
   
