@@ -36,8 +36,8 @@ jobs:
     # Run the POSTMAN collection
       - name: Run POSTMAN collection
         run: >
-          newman run ./QuickRestaurant.QA.Tests/postman/AWSTests.json 
-          --env-var coreapiurl=alpha.qsr.world/api/v1
+          newman run ./QuickRestaurant.QA.Tests/postman/EcommGraphQL.json
+          -e alphaenv.json
           -r cli,htmlextra --reporter-htmlextra-export testArtifacts/TestsReport.html
         
     # Upload the contents of Test Results directory to workspace
