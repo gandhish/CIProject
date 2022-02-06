@@ -80,7 +80,7 @@
 		},
 		{
 			"key": "AdminUI_SuperUser_Password",
-			"value": "WingStop@123",
+			"value": "${{ secrets.ADMINUI_SUPERUSER_PASSWORD }}",
 			"type": "default",
 			"enabled": true
 		},
