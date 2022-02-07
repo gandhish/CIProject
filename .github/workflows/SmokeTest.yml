@@ -37,6 +37,8 @@ jobs:
       - name: Run POSTMAN collection
         run: >
           newman run ./QuickRestaurant.QA.Tests/EcommGraphQL.json
+          --env-var "AdminUI_Client_Id=${{ secrets.CLIENTID }}"
+          --env-var "AdminUI_Client_Secret=${{ secrets.CLIENTSECRET }}"
           -e ./QuickRestaurant.QA.Tests/alphaenv.json
           -r cli,htmlextra --reporter-htmlextra-export testArtifacts/TestsReport.html
         
