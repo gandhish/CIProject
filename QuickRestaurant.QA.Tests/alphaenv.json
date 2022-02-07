@@ -56,13 +56,13 @@
 		},
 		{
 			"key": "AdminUI_Client_Id",
-			"value": "9dbe131f-173d-497c-a91d-473de50fc9a2",
+			"value": "",
 			"type": "default",
 			"enabled": true
 		},
 		{
 			"key": "AdminUI_Client_Secret",
-			"value": "lXf7Q~PzNx8ELLeyrhJPY9zemuGs1UOvDfX1b",
+			"value": "",
 			"type": "secret",
 			"enabled": true
 		},
