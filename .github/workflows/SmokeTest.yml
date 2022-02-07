@@ -39,6 +39,7 @@ jobs:
           newman run ./QuickRestaurant.QA.Tests/EcommGraphQL.json
           --env-var "AdminUI_Client_Id=${{ secrets.CLIENTID }}"
           --env-var "AdminUI_Client_Secret=${{ secrets.CLIENTSECRET }}"
+          --env-var "AdminUI_SuperUser_Password=${{ secrets.ADMINUI_SUPERUSER_PASSWORD }}"
           -e ./QuickRestaurant.QA.Tests/alphaenv.json
           -r cli,htmlextra --reporter-htmlextra-export testArtifacts/TestsReport.html
         
