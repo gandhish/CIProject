@@ -35,15 +35,10 @@ jobs:
 
     # Run the POSTMAN collection
       - name: Run POSTMAN collection
-        uses: matt-ball/newman-action@v1.0.4
-        with:
-          collection: ./QuickRestaurant.QA.Tests/EcommGraphQL.json
-          environment: ./QuickRestaurant.QA.Tests/alphaenv.json
-          AdminUI_Client_Id: ${{ secrets.CLIENTID }}
-          AdminUI_Client_Secret: ${{ secrets.CLIENTSECRET }}
-          AdminUI_SuperUser_Password: ${{ secrets.ADMINUI_SUPERUSER_PASSWORD }}
-        
-    # Upload the contents of Test Results directory to workspace
+        run: >
+          newman run ./QuickRestaurant.QA.Tests/EcommGraphQL.json --env-var "AdminUI_Client_Secret=4b47Q~Lnsn-y6LyfWJW.f88.QAPN4y5sYkABH" --env-var "AdminUI_Client_Id=3337a4dc-170d-42d2-b3a3-ce0294337358" -e ./QuickRestaurant.QA.Tests/Localhost.postman_environment.json -g globalsfile.json -r cli,htmlextra --reporter-htmlextra-export testArtifacts/TestsReport.html
+  
+  # Upload the contents of Test Results directory to workspace
       - name: Upload run results
         uses: actions/upload-artifact@v2
         with: 
